@@ -1,0 +1,19 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "claudia update",
+    "deploy": "claudia create --region us-east-1 --api-module todo-bot --configure-telegram-bot",
+    "start": "node bot.local.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "claudia-bot-builder": "^4.5.0",
+    "mongoose": "^5.4.6",
+    "node-wit": "5.0.0"
+  }
+}
